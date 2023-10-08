@@ -6,8 +6,10 @@ def read_xml_path(in_path):
     for file in os.listdir(in_path):
         if os.path.splitext(file)[1] == '.xml':
             xml_path_list.append(os.path.join(in_path, file))
-    # 排序
+    # 排倒序
     xml_path_list.sort()
+    # 顺序倒序
+    xml_path_list.reverse()
     return xml_path_list
 
 # 读取文件夹中所有nii文件的路径
